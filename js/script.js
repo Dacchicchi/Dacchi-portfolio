@@ -63,8 +63,30 @@ $(function(){
     
     
     
+    //works 各作品名ボタンを押した際のスライド　（スライド切り替え、ポジションで切り替え）
+
+      $('.works-btn').click(function() {
+    var wind=$(window).width();
+    var clickedIndex = $('.works-btn').index($(this));
+          
+        console.log(clickedIndex);  
+          
+    $('.active').removeClass('active');
+          
+    if(wind>=768){
+    $('.slide').eq(clickedIndex).addClass('active');
+          $('.slides ul').fadeOut(50).fadeIn(700);
+    toggleChangeBtn(); 
+    }else if(wind<=768){
+        $('.slide').eq(clickedIndex).addClass('active');
+          $('.slides ul').fadeOut(50).fadeIn(700);
+    toggleChangeBtn(); 
+    }
+    });
     
-  //works 各作品名ボタンを押した際のスライド　（スライド切り替え）
+    
+    /*
+  //works 各作品名ボタンを押した際のスライド　（スライド切り替え、作品を全て700pxずつ並べてずらす事で表示する。）
 
       $('.works-btn').click(function() {
     var wind=$(window).width();
@@ -88,6 +110,7 @@ $(function(){
     toggleChangeBtn(); 
     }
     });
+    */
     
     /*
    //works 各作品名ボタンを押した際のスライド （切り替え）

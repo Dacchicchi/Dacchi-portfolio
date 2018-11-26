@@ -332,24 +332,25 @@ dd{
 }
 
 .slides ul{
-    width: 4224px;
+    width: 1400px;
     height: 430px;
+    position: relative;
 }
 
-.slides ul li{
+.slides ul .slide{
     width: 700px;
     height: 430px;
+    position: absolute;
+    left: 700px;
     display: inline-block;
     text-align: center;
+    transition: left 0.4s ease-out;
 }
 
-.slide {
-/*  display: none; */
-   
-}
-
-.active {
+.slides ul .active {
   display: block;
+    position: absolute;
+    left: 0px;
 }
 
 .works-left{

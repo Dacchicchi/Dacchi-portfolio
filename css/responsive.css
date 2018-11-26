@@ -200,19 +200,26 @@
     height: 430px;
     max-width: 100%;
     /*box-shadow: 3px 3px 10px 1px #fff;*/
-    overflow: hidden;
+    overflow: none;
 }
 
 .slides ul{
-    width: 1824px;
+    position: relative;
 }
 
-.slides ul li{
+.slides ul .slide{
     width: 300px;
     max-width: 100%;
     height: 430px;
     max-width: 100%;
     min-width: 250px;
+    position: absolute;
+    right: -100%;
+}
+    
+    .slides ul .active{
+    position: absolute;
+    right: 0;
 }
     
     /*.works-left-phone{
@@ -259,10 +266,6 @@ display: inline-block;
 
      .item-right{
         width: 100%;
-    }
-    
-    .item-left .item:nth-child(2) img:hover{
-        
     }
       
     .item img{
