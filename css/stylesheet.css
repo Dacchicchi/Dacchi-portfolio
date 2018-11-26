@@ -1,0 +1,558 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  margin: 0 auto;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+    font-size: 14px;
+}
+
+.container {
+  max-width: 1170px;
+  min-width:960px;
+  width: 100%;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.clear{
+    clear: left;
+    clear: right;
+}
+
+/*ヘッダー*/
+
+header{
+	height: 65px;
+	width: 100%;
+	background-color: rgba(360,360,360,0.8);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.header-left{
+	float: left;
+	line-height: 65px;
+}
+
+.header-left img{
+    padding: 0 0 5px;
+}
+
+.header-right{
+	float: right;
+	line-height: 65px;
+}
+
+.header-right a{
+	margin-left: 20px;
+	color: #000000;
+    font-size: 20px;
+    padding: 10px 10px;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+}
+
+.header-right a:hover{
+    color: white;
+}
+
+.menu-icon{
+    display: none;
+}
+
+ .close{
+        display: none;
+    }
+
+.iphone-menu-wrap{
+    display: none;
+}
+
+
+
+/*トップ画面*/
+
+.top{
+	padding: 70px 0;
+	width: 100%;
+    height: auto;
+	background-color: #1a1a1a;
+	text-align: center;
+	line-height: 550px;
+}
+
+.top .my-logo{
+	display: inline-block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.top .my-logo-phone{
+	display: none;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/*自己紹介画面*/
+
+.about-wrap{
+    background-image: url(../image/about%20background.jpg);
+    background-blend-mode: soft-light;
+    background-color: rgba(360,360,360,0.6);
+    background-size: cover;
+    width:100%;
+	padding: 0 0 70px;
+}
+
+.about-title{
+    text-align: center;
+    padding: 70px 0 60px;
+}
+
+.about-title h1{
+    font-size: 32px;
+}
+
+.status-wrap{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 700px;
+}
+
+.about-left{
+    padding:0px 0px 0px 30px;
+}
+
+.about-left img{
+    width: 280px;
+    height:280px;
+}
+
+.about-right{
+    padding: 0 0 0 40px;   
+    width:400px;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 100%;
+}
+
+.about-right h2{
+    font-size: 27px;
+    width:120px;
+}
+
+.about-right .name p{
+    width: 120px;
+    font-size: 10px;
+    color:white;
+    padding:4px 15px;
+    background-color: black;
+}
+
+.about-right h3{
+    font-size: 20px;
+    width:120px;
+}
+
+dt{
+    font-size: 20px;
+    display: inline-block;
+    width: 120px;
+    border-right: 1px solid black;
+}
+
+dd{
+    font-size: 17px;
+    display: inline-block;
+}
+
+
+.border-black p{
+    width: 100%;
+    height: 18px;
+    background-color: black;
+}
+
+.status-item{
+    font-size: 12px;
+}
+
+.status-item p{
+    padding-top: 10px;
+    line-height: 150%;
+}
+
+/*スキル画面*/
+
+.skill-wrap{
+    background-image: url(../image/skill-bg.jpg);
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,0.6);
+    background-size: cover;
+    width:100%;
+    padding: 70px 0 40px;
+}
+
+.skill-title{
+    text-align: center;
+    padding: 0px 0 60px;
+}
+
+.skill-title h1{
+    font-size: 45px;
+    color: white;
+}
+
+.skill{
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px;
+}
+
+.meter{
+    width: 615px;
+    height:30px;
+    color:white;
+    line-height:30px;
+    padding: 0 0 0 30px;
+}
+
+.ps{
+    background-image:linear-gradient(90deg, rgba(0,200,250,1.0) 10%,rgba(0,200,250,0.3) 50%,rgba(0,200,250,0) 90%);
+}
+
+.ai{
+    background-image:linear-gradient(90deg, rgba(239,111,36,1.0) 10%,rgba(239,111,36,0.3) 50%,rgba(239,111,36,0) 90%);
+}
+
+.dw{
+    background-image:linear-gradient(90deg, rgba(51,250,2,1.0) 10%,rgba(51,250,2,0.3) 50%,rgba(51,250,2,0) 85%);
+}
+
+.id{
+    background-image:linear-gradient(90deg, rgba(255,64,140,1.0) 10%,rgba(255,64,140,0.3) 50%,rgba(255,64,140,0) 80%);
+}
+
+.ae{
+    background-image:linear-gradient(90deg, rgba(200,143,255,1.0) 10%,rgba(200,143,255,0.3) 50%,rgba(200,143,255,0) 70%);
+}
+
+.pr{
+    background-image:linear-gradient(90deg, rgba(207,96,235,1.0) 10%,rgba(207,96,235,0.3) 50%,rgba(207,96,235,0) 70%);
+}
+
+/*Works上画面*/
+
+.works-wrap{
+    padding: 70px 0 100px;
+    background-color: #1a1a1a;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.works-title{
+    padding:0 0 30px; 
+}
+
+.works-title h1{
+    font-size: 45px;
+    color: white;
+}
+
+.works-list{
+    padding:0 0 60px;
+}
+
+.works-list .works-btn{
+    color:white;
+    font-size: 35px;
+    padding: 5px 10px;
+    display: inline-block;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.works-list .works-btn:first-child:hover{
+    color:#dc6000;
+    background-color: rgba(220,90,0,0.1);
+}
+
+.works-list .works-btn:nth-child(2):hover{
+    color:#3fa24c;
+    background-color: rgba(63,162,76,0.1);
+}
+
+.works-list .works-btn:nth-child(3):hover{
+    color:#494d7c;
+    background-color: rgba(73,77,124,0.1);
+}
+
+.works-list .works-btn:nth-child(4):hover{
+    color:#d70012;
+    background-color: rgba(215,0,15,0.1);
+}
+
+.works-list .works-btn:nth-child(5):hover{
+    color:#974A88;
+    background-color: rgba(151,74,136,0.1);
+}
+
+.works-list .works-btn:last-child:hover{
+    color:#e4d300;
+    background-color: rgba(228,211,0,0.1);
+}
+
+.works-image{
+    height:420px;
+    line-height: 420px;
+    position: relative;
+}
+
+.slides {
+  /*padding: 0;*/
+    width:700px;
+    height: 430px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides ul{
+    width: 4224px;
+    height: 430px;
+}
+
+.slides ul li{
+    width: 700px;
+    height: 430px;
+    display: inline-block;
+    text-align: center;
+}
+
+.slide {
+/*  display: none; */
+   
+}
+
+.active {
+  display: block;
+}
+
+.works-left{
+float: left;
+    cursor: pointer;
+    position: absolute;
+    top:185px;
+    left: 0;
+    display: none;
+}
+
+/*.works-left-phone{
+display: none;
+}*/
+
+.works-right{
+float: right;
+display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top:185px;
+    right: 0;
+}
+
+
+/*.works-right-iphone{
+float: right;
+margin: 185px 0 0;
+display: none;
+}*/
+
+.works-image .top-item{
+    box-shadow: 3px 3px 10px 1px #fff;
+}
+
+/*Works下画面*/
+
+.item-wrap{
+    padding: 70px 0 70px;
+    background-color: #f9f5e1;
+    text-align: center;
+    
+}
+
+.items{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.item-left{
+    float: left;
+    width: 50%;
+    display: block;
+}
+
+.item-right{
+    float: right;
+    width: 50%;
+    display: block;
+}
+
+.item-left .item{
+    margin:0 10px 20px 100px;
+    width: 370px;
+    height: 230px;
+    background-color: white;
+    display: block;
+}
+
+
+.item-right .item{
+    margin:0 100px 20px 10px;
+    width: 370px;
+    height: 230px;
+    background-color: white;
+    display: block;
+}
+
+.item img{
+    padding: 15px 15px 20px;
+}
+
+.item p{
+    color:#a4a4a4;
+    font-size: 12px;
+}
+
+#item-DM-gif{
+    display: none;
+}
+
+/*お問い合わせ画面*/
+
+.contact-wrap{
+    padding: 70px 0 70px;
+    background-color: #00588c;
+    text-align: center;
+}
+
+.contact-title{
+    padding:0 0 90px; 
+}
+
+.contact-title h1{
+    font-size: 45px;
+    color: white;
+}
+
+.form-icon{
+    height: 400px;
+    display: flex;
+}
+
+.contact-left{
+    width: 140px;
+    height: 94px;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.contact-right{
+    width: 140px;
+    height: 94px;
+    margin-right: 20px;
+    margin-top: 70px;
+}
+
+
+.form-wrap{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.contact-right-phone{
+    display: none;
+}
+
+form input{
+    width: 400px;
+    height: 30px;
+    border: none;
+    margin: 0 0 35px;
+}
+
+form textarea{
+    width: 400px;
+    border: none;
+    height: 150px;
+    margin: 0 0 35px;
+}
+
+.btn{
+    border-radius:15px;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.btn-submit{
+    background-color:#ffb600;
+}
+
+/*フッター画面*/
+
+footer{
+    background-color: #1a1a1a;
+    height: 360px;
+    padding: 70px 0 70px;
+    text-align: center;
+}
+
+.footer-title{
+    padding: 0 0 40px;
+}
+
+.footer-title h1{
+    font-size: 35px;
+    color: white;
+}
+
+.follow-wrap img{
+    padding: 0 30px;
+}
+
+.last{
+   padding: 40px 0 0 0; 
+}
+
+/*ページトップボタン*/
+footer .pagetop{
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+

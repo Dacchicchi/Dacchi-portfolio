@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media(max-width:768px){
+    /*max-width:768pxはスマホ対応に適した幅*/
+    
+    .container{
+        max-width: 768px;
+        min-width: 300px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    
+    header{
+        height: 100px;
+        max-width: 100%;
+    }
+    
+    .header-left{
+        line-height: 100px;
+    }
+    
+    .header-left img{
+        width: 50px;
+        height: 50px;
+        padding: 0 0 0px;
+    }
+    
+    .header-right{
+        line-height: 100px;
+        width: 50px;
+    }
+    
+    .header-menu a{
+        display: none;
+    }
+    
+    .menu-icon{
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+}
+    
+    .menu-icon .bars{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .iphone-menu-wrap{
+        display: block;
+        width: 150px;
+        height: 320px;
+        background-color: rgba(153,153,153,0.7);
+        position: absolute;
+        position: fixed;
+        top: -320px;
+        right: 0px;
+        z-index: 1;
+        text-align: center;
+        display: none;
+}
+    
+    .close{
+        width: 50px;
+        height: 50px;
+        display: none;
+    }
+    
+    .iphone-menu-wrap a{
+        width: 100%;
+        height: 25%;
+        padding: 25px 0;
+	    color: #000000;
+        font-size: 30px;
+        transition: all 0.2s ease-out;
+        text-decoration: none;
+        float: left;
+        display: inline-block;
+        border-bottom: 1px solid #4D4D4D;
+}
+
+    .iphone-menu-wrap a:active{
+         color: white;
+}
+    
+    .iphone-menu-wrap a:last-child{
+        border-bottom: none;
+    }
+    
+    
+    
+    
+    /*トップ画面*/
+    
+    .top{
+        padding: 50px 0;
+        line-height: 450px;
+    }
+    
+    .top .my-logo{
+        display: none;
+    }
+    
+    .top .my-logo-phone{
+        display: inline-block;
+}
+
+    
+    /*自己紹介画面*/
+    
+    .about-wrap{
+	padding: 120px 0 70px;
+}
+    .about-title{
+    padding: 0px 0 60px;
+}
+    
+    
+    .status-wrap{
+         display: block;
+         text-align: center;
+         width: 100%;
+    }
+    
+    
+    .about-left{
+         padding:0px 0px 50px 0px;
+    }
+    
+    .about-left img{
+        max-width: 280px;
+        max-height: 280px;
+    width: 100%;
+    height:100%;
+}
+    
+    .about-right{
+        padding: 0 0 0 0;
+    }
+    
+    dd{
+        font-size: 12px;
+    }
+    
+    /*スキル画面*/
+    
+    .skill-wrap{
+    padding: 120px 0 40px;
+}
+    
+    .meter{
+        font-size: 10px;
+    }
+    
+    /*Works上画面*/
+    
+    .works-wrap{
+    padding: 120px 0 100px;
+}
+    
+    .works-title{
+        padding:0 0 60px;
+    }
+    
+    .works-list{
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .works-list .works-btn{
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid rgba(360,360,360,0.5);
+        float: left;
+    }
+    
+    .works-left{
+       margin: -50px 0 0; 
+        position: absolute;
+    top:0px;
+    left: 0;
+    }
+    
+    .works-right{
+       margin: -50px 0 0; 
+        position: absolute;
+    top:0px;
+    right: 0;
+    }
+    
+    .works-image{
+    height:420px;
+    margin: 50px 0 0;
+}
+    
+.slides {
+    width:300px;
+    margin: 0 auto;
+    height: 430px;
+    max-width: 100%;
+    /*box-shadow: 3px 3px 10px 1px #fff;*/
+    overflow: hidden;
+}
+
+.slides ul{
+    width: 1824px;
+}
+
+.slides ul li{
+    width: 300px;
+    max-width: 100%;
+    height: 430px;
+    max-width: 100%;
+    min-width: 250px;
+}
+    
+    /*.works-left-phone{
+float: left;
+margin: 20px 0 0;
+display: inline-block;
+}
+       .works-right-iphone{
+        margin: 20px 0 0;
+        display: inline-block;
+    }*/
+    
+    .works-image .top-item {
+    box-shadow: 3px 3px 10px 1px #fff;
+    max-width: 100%;
+        width: 90%;
+    height: auto;
+    min-width: 250px;
+}
+    
+    
+    
+    /*Works下画面*/
+    
+    .items{
+        width: 100%;
+    }
+    
+   .item-left .item{
+        margin: 0px auto 20px;
+       width: 100%;
+       max-width: 375px;
+    }
+    
+    .item-right .item{
+        margin: 0px auto 20px;
+        width: 100%;
+        max-width: 375px;
+    }
+    
+    .item-left{
+    width: 100%;
+}
+
+     .item-right{
+        width: 100%;
+    }
+    
+    .item-left .item:nth-child(2) img:hover{
+        
+    }
+      
+    .item img{
+        max-width: 340px;
+        width: 100%;
+}
+       
+    /*お問い合わせ画面*/
+    
+    .contact-wrap{
+    padding: 120px 0 70px;
+}
+    
+    
+    .contact-left{
+        float: left;
+    width: 100px;
+    height: 67px;
+    margin-left: 0px;
+    margin-top: 0px;
+        margin: 0 0 35px;
+}
+    
+    .contact-right-phone{
+        float: right;
+    display: block;
+    width: 100px;
+    height: 67px;
+        margin: 0 0 35px;
+}
+    .contact-right{
+        display: none;
+    }
+    
+    .form-icon{
+    height: auto;
+    display: block;
+        max-width: 400px;
+        margin: 0 auto;
+}
+    
+    .form-icon-frame{
+     width: 100%;  
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .form-wrap{
+    width: 100%;
+        max-width: 400px;
+}
+    
+    form input{
+        width: 90%;
+    }
+    
+    form textarea{
+        width: 90%;
+    }
+    
+    
+}
