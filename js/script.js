@@ -35,10 +35,10 @@ $(function(){
     $(window).scroll(function(){
         var sc=$(window).scrollTop();
         if(sc > 300){
-           $('.pagetop').fadeIn(300);
-           }else{
-           $('.pagetop').fadeOut(300);
-           }
+            $('.pagetop').addClass("active");
+        } else {
+            $('.pagetop').removeClass("active");
+        }
     });
     
     //ページトップ　クリックしたらトップへ戻る
@@ -136,14 +136,10 @@ $(function(){
     if(wind>=768){
     if ($(this).hasClass('works-right')){
         $displaySlide.next().addClass('active');
-        $('.slides ul').fadeOut(100).animate({
-            marginLeft:-700 * (slideIndex + 1)
-        },{queue:false,duration:300}).fadeIn(600);
+        $('.slides ul').fadeOut(50).fadeIn(700);
     } else if ($(this).hasClass('works-left')){
         $displaySlide.prev().addClass('active');
-        $('.slides ul').fadeOut(100).animate({
-            marginLeft:(-700 * (slideIndex))+700
-        },{queue:false,duration:300}).fadeIn(600);
+        $('.slides ul').fadeOut(50).fadeIn(700);
     }
     toggleChangeBtn();
       
@@ -151,14 +147,10 @@ $(function(){
       
     if ($(this).hasClass('works-right')){
         $displaySlide.next().addClass('active');
-        $('.slides ul').fadeOut(100).animate({
-            marginLeft:-304 * (slideIndex + 1)
-        },{queue:false,duration:300}).fadeIn(600);
+        $('.slides ul').fadeOut(50).fadeIn(700);
     } else if ($(this).hasClass('works-left')){
         $displaySlide.prev().addClass('active');
-        $('.slides ul').fadeOut(100).animate({
-            marginLeft:(-304 * (slideIndex))+304
-        },{queue:false,duration:300}).fadeIn(600);
+        $('.slides ul').fadeOut(50).fadeIn(700);
     }
     toggleChangeBtn();
   }
