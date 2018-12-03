@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media(max-width:768px) {
+    
+    body{
+        background-color: #1a1a1a;
+    }
+    
+    /*トップ画面*/
+
+    .top {
+        padding: 100px 0 70px;
+    }
+
+    .top .icon img {
+        position: absolute;
+        top: 100px;
+        left: 30px;
+    }
+    
+    .right-allow{
+        margin: 20px 0 0;
+    }
+
+    /*作品説明欄画面*/
+    
+    .work-title{
+        padding: 70px 0 70px;
+    }
+    
+    .work-memo-wrap {
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .work-memo {
+        padding: 10px 20px;
+        display: block;
+        align-items: center;
+        border-bottom: none;
+        /*border-bottom: 1px solid #D36000;*/
+    }
+
+    .work-memo-item {
+        width: 100%;
+        border-bottom: 1px solid #D36000;
+    }
+
+    .work-memo-item h2 {
+        text-align: left;
+        line-height: 150%;
+    }
+
+    .work-memo-text {
+        padding-left: 0px;
+        width: 100%;
+        max-width: 100%
+    }
+    
+    .work-logo{
+        padding: 20px 0 0;
+    }
+
+    /*様々な広告媒体の例*/
+
+    .work-photos-wrap img {
+        width: 100%;
+        height: auto;
+    }
+    
+  /*      .work-photos-wrap{
+            padding: 0 0 0;
+    }*/
+
+    .work-photos-upper {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .upper-left {
+        float: none;
+        padding-right: 0px;
+        padding: 20px 0 0;
+    }
+
+    .upper-right {
+        float: none;
+        padding: 20px 0 0;
+    }
+
+    .work-photos-under {
+        width: 100%;
+        max-width: 526px;
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+
+    /*広告媒体の説明欄*/
+
+    .work-example-wrap {
+        width: 100%;
+        padding: 0 0 0;
+    }
+
+    .work-example-wrap img {
+        width: 100%;
+        height: auto;
+        max-width: 440px;
+    }
+
+    .work-examples {
+        width: 100%;
+        max-width: 440px;
+    }
+
+    .work-example p {
+        width: 100%;
+        max-width: 350px;
+
+    }
+
+
+
+
+
+
+}
