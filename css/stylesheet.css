@@ -48,7 +48,7 @@
     padding: 70px 0 60px;
 }
 
-.about-title h1{
+.about-title h2{
     font-size: 32px;
 }
 
@@ -76,7 +76,7 @@
     max-width: 100%;
 }
 
-.about-right h2{
+.about-right h3{
     font-size: 27px;
     width:120px;
 }
@@ -138,7 +138,7 @@ dd{
     padding: 0px 0 60px;
 }
 
-.skill-title h1{
+.skill-title h2{
     font-size: 45px;
     color: white;
 }
@@ -195,7 +195,7 @@ dd{
     padding:0 0 30px; 
 }
 
-.works-title h1{
+.works-title h2{
     font-size: 45px;
     color: white;
 }
@@ -380,7 +380,7 @@ display: none;
     padding:0 0 90px; 
 }
 
-.contact-title h1{
+.contact-title h2{
     font-size: 45px;
     color: white;
 }
